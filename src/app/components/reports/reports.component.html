@@ -1,0 +1,30 @@
+
+<div class="body">
+<h1>Reportes</h1>
+
+<table id="tabla" class="table table-success table-striped">
+    <thead>
+       <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Id</th>
+         
+       </tr>
+    </thead>
+    <tbody>
+       <tr *ngFor="let reporte of reportes">
+          
+          <td>{{ reporte.nombre }}</td>
+          <td>{{ reporte.Apellido }}</td>
+          <th>{{ reporte.id }}</th>
+         
+       </tr>
+    </tbody>
+
+ </table>
+ <button (click)="descargar()" class="btn btn-danger">descargar pdf</button>
+ <button (click)="exportexcel()" class="btn btn-success">Descargar excel</button>
+ <button (click)="exportarWord()" class="btn btn-primary">Descargar Word</button>
+ 
+</div>
+ 
